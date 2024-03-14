@@ -1,0 +1,144 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  background-color: rgb(237, 237, 237);
+  border-right: 2px solid rgb(88, 88, 88);
+}
+
+.left .top {
+  width: 100%;
+}
+
+.loggedInUserDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  background-color: rgba(139, 184, 167, 0.961);
+}
+
+.loggedInUserDiv button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 15px;
+  background-color: rgba(139, 184, 167, 0.961);
+  cursor: pointer;
+  margin-top: 2%;
+  border-top: 1px solid black ;
+  border-bottom: 1px solid black ;
+}
+
+.user img {
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+
+.left .bottom .chats {
+  padding-top: 32px;
+}
+
+.right {
+  width: 70%;
+  height: 100%;
+  display: none;
+}
+
+.right .top {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right .middle {
+  background-color: rgb(39, 38, 39);
+  height: calc(100% - 14vh);
+  padding: 7px;
+  overflow-y: auto;
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/461/478/desktop-wallpaper-whatsapp-dark-whatsapp-chat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right .middle .msg {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #eee;
+  width: fit-content;
+  max-width: 150px;
+  margin-top: 2px;
+  
+}
+
+.incoming {
+  border-bottom-left-radius: 0 !important;
+}
+
+.outgoing {
+  border-bottom-right-radius: 0 !important;
+  margin-left: auto;
+}
+
+.right .bottom {
+  height: 7vh;
+  width: 100%;
+  background-color: rgba(219, 204, 160, 0.649);
+  display: flex;
+  gap: 20px;
+  padding-right: 15px;
+}
+
+.right .bottom input {
+  height: 100%;
+  width: 83%;
+  border: 1px solid rgba(0, 0, 0, 0.517);
+  outline: none;
+  padding: 7px 7px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.right .bottom button {
+  width: 15%;
+  height: 100%;
+  border: 0.5px;
+  font-weight: 400;
+  padding: 2px 15px 2px 15px;
+  background-color: rgba(72, 227, 175, 0.665);
+  border: 1px solid rgba(0, 0, 0, 0.548);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+
+i{
+  font-size: 18px;
+}
